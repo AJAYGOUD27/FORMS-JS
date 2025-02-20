@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.life {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../images/Dot_Pattern.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gan {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+.gan h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.gan .annn {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.gan .annn input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.gan .annn input::-moz-placeholder {
+  color: #fff;
+}
+.gan .annn input::placeholder {
+  color: #fff;
+}
+.gan .annn i {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+.gan .ann {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.gan .ann label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+.gan .ann a {
+  color: #fff;
+  text-decoration: none;
+}
+.gan .ann a:hover {
+  text-decoration: underline;
+}
+.gan .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.gan .an {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.gan .an p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.gan .an p a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
