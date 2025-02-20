@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="life">
+    <div class="gan">
+      <form onsubmit="return valid()">
+        <h1>Login</h1>
+        <div class="annn">
+          <input
+            class="form-control name"
+            type="text"
+            placeholder="Username"
+            id="name"
+          />
+          <i class="fas fa-user"></i>
+          <p id="err"></p>
+        </div>
+        <div class="annn">
+          <input
+            class="form-control pass"
+            type="password"
+            placeholder="Password"
+            id="pass"
+          />
+          <i class="fas fa-lock"></i>
+          <p id="errr"></p>
+        </div>
+        <div class="ann">
+          <label><input type="checkbox" /> Remember Me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="an">
+          <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function valid() {
+        let name = document.getElementById("name");
+        let err = document.getElementById("err");
+        let pass = document.getElementById("pass");
+        let errr = document.getElementById("errr");
+
+        if (name.value === "") {
+          err.innerHTML = "<i class='fas fa-exclamation-circle'></i> Please enter your username.";
+          err.style.color = "red";
+          return false;
+        } else {
+          err.innerHTML = "";
+        }
+
+        if (pass.value === "") {
+          errr.innerHTML = "<i class='fas fa-exclamation-circle'></i> Please enter your password.";
+          errr.style.color = "red";
+          return false;
+        } else {
+          errr.innerHTML = "";
+        }
+
+        return false;
+      }
+    </script>
+  </body>
+</html>
